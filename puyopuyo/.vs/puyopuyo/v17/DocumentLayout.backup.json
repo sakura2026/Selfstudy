@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F4BB25B3-F058-4D48-8607-AB1D7147D26B}|puyopuyo.vcxproj|C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Utility\\Fade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4BB25B3-F058-4D48-8607-AB1D7147D26B}|puyopuyo.vcxproj|solutionrelative:Src\\Utility\\Fade.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F4BB25B3-F058-4D48-8607-AB1D7147D26B}|puyopuyo.vcxproj|C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\Title\\Title.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F4BB25B3-F058-4D48-8607-AB1D7147D26B}|puyopuyo.vcxproj|solutionrelative:Src\\Scene\\Title\\Title.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Fade.cpp",
+              "DocumentMoniker": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Utility\\Fade.cpp",
+              "RelativeDocumentMoniker": "Src\\Utility\\Fade.cpp",
+              "ToolTip": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Utility\\Fade.cpp",
+              "RelativeToolTip": "Src\\Utility\\Fade.cpp",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAmwIgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-10T10:16:02.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SceneManager.cpp",
               "DocumentMoniker": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\SceneManager.cpp",
               "RelativeDocumentMoniker": "Src\\Scene\\SceneManager.cpp",
@@ -58,20 +75,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Title.h",
               "DocumentMoniker": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\Title\\Title.h",
               "RelativeDocumentMoniker": "Src\\Scene\\Title\\Title.h",
-              "ToolTip": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\Title\\Title.h*",
-              "RelativeToolTip": "Src\\Scene\\Title\\Title.h*",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBkAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\Title\\Title.h",
+              "RelativeToolTip": "Src\\Scene\\Title\\Title.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-06-09T14:49:17.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Title.cpp",
               "DocumentMoniker": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\Title\\Title.cpp",
               "RelativeDocumentMoniker": "Src\\Scene\\Title\\Title.cpp",
@@ -79,12 +96,11 @@
               "RelativeToolTip": "Src\\Scene\\Title\\Title.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-06-09T14:49:11.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-09T14:49:11.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SceneManager.h",
               "DocumentMoniker": "C:\\Users\\kbc12405065\\Documents\\GitHub\\Selfstudy\\puyopuyo\\Src\\Scene\\SceneManager.h",
               "RelativeDocumentMoniker": "Src\\Scene\\SceneManager.h",

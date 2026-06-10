@@ -3,8 +3,8 @@
 #include <DxLib.h>
 
 // 画面の横幅・縦幅
-static const int SCREEN_W = D_WINDOW_SIZE_Y;
-static const int SCREEN_H = D_WINDOW_SIZE_X;
+static const int SCREEN_W = D_WINDOW_SIZE_X;  // 横幅 480
+static const int SCREEN_H = D_WINDOW_SIZE_Y;  // 縦幅 720
 
 // 1フレームあたり alpha が変化する量（大きいほど速くフェードする）
 static const int FADE_SPEED = 5;
@@ -14,7 +14,7 @@ static const int FADE_SPEED = 5;
 /// </summary>
 Fade::Fade()
 {
-    alpha = 0;     // 最初は透明（真っ黒にはなっていない）
+    alpha = 0;        // 最初は透明（真っ黒にはなっていない）
     isFade = false;
     isFadeOut = false;
     isEnd = false;
@@ -25,7 +25,7 @@ Fade::Fade()
 /// </summary>
 void Fade::StartFadeIn()
 {
-    alpha = 255;   // 真っ黒な状態からスタート
+    alpha = 255;      // 真っ黒な状態からスタート
     isFade = true;
     isFadeOut = false;
     isEnd = false;
@@ -36,7 +36,7 @@ void Fade::StartFadeIn()
 /// </summary>
 void Fade::StartFadeOut()
 {
-    alpha = 0;     // 透明な状態からスタート
+    alpha = 0;        // 透明な状態からスタート
     isFade = true;
     isFadeOut = true;
     isEnd = false;
@@ -81,7 +81,7 @@ void Fade::Update()
 
         if (alpha <= 0)
         {
-            alpha = 0;        // 0 を下回らないようにクランプする
+            alpha = 0;     // 0 を下回らないようにクランプする
             isFade = false;
         }
     }
@@ -94,7 +94,6 @@ void Fade::Draw() const
 {
     // アルファブレンドモードに切り替えて黒い幕を描く
     SetDrawBlendMode(DX_BLENDMODE_ALPHA, alpha);
-
     DrawBox(0, 0, SCREEN_W, SCREEN_H,
         GetColor(0, 0, 0), TRUE);  // 黒い四角を画面全体に塗りつぶす
 
@@ -118,6 +117,9 @@ bool Fade::IsFadeOutEnd() const
     return isEnd;
 }
 
+/// <summary>
+/// フェードを即座に終わらせる
+/// </summary>
 void Fade::ForceEnd()
 {
     // フェード中でなければ何もしない
@@ -128,14 +130,14 @@ void Fade::ForceEnd()
 
     if (isFadeOut)
     {
-        // フェードアウト中　→　即座に真っ黒にして「完了」にする
+        // フェードアウト中 → 即座に真っ黒にして「完了」にする
         alpha = 255;
         isFade = false;
         isEnd = true;
     }
     else
     {
-        // フェードイン中　→　即座に透明にして「完了」にする
+        // フェードイン中 → 即座に透明にして「完了」にする
         alpha = 0;
         isFade = false;
         isEnd = false;
