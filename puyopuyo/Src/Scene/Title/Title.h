@@ -12,7 +12,6 @@ public:
     eSceneType Update() override;
     void Draw() const override;
     void Finalize() override;
-    void TitleCursorUpdate(void);
 
 private:
     // フォントハンドル

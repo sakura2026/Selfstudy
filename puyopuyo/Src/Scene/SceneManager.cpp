@@ -5,6 +5,7 @@
 #include "../Input/InputManager.h"
 
 // 各シーンのインクルードをする
+
 #include "../Scene/Title/Title.h"
 #include "../Scene/InGame/InGame.h"
 #include "../Scene/End/End.h"
@@ -116,6 +117,10 @@ void SceneManagerUpdate(void)
             is_end_flag = 1;
             return;
         }
+
+        // それ以外はシーンを切り替える
+        ChangeScene(next_scene_type);
+        current_scene_type = next_scene_type;
     }
 }
 
@@ -165,9 +170,9 @@ void ChangeScene(eSceneType new_scene_type)
         current_scene = new Title();
         break;
 
-    //case eInGame:
-    //    current_scene = new InGame();
-    //    break;
+    case eInGame:
+        current_scene = new InGame();
+        break;
 
     //case eEnd:
     //    current_scene = new End();

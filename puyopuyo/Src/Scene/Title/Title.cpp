@@ -64,13 +64,11 @@ eSceneType Title::Update()
             FadeIn = false;
         }
     }
-
     // フェードアウトのとき
     else
     {
         // アルファ値を減らす
         Alpha -= 3;
-
         // 最小値に達したらフェードインに切り替え
         if (Alpha <= 0)
         {
@@ -79,10 +77,10 @@ eSceneType Title::Update()
         }
     }
 
+    // シーンマネージャーのフェード中は入力を受け付けない
     if (!IsSceneInputLocked())
     {
-        if (input.GetKeyState(KEY_INPUT_SPACE) == eInputState::ePressed ||
-            input.GetButtonState(XINPUT_BUTTON_A) == eInputState::ePressed)
+         if (input.GetKeyState(KEY_INPUT_SPACE) == eInputState::ePressed)
         {
             return eInGame;
         }
@@ -99,11 +97,6 @@ void Title::Draw() const
     DrawStringToHandle(50, 100, "PUYO PUYO MODOKI", GetColor(125, 255, 70), SmallFont, GetColor(0, 0, 0));
     // ブレンドモードを元（通常描画）に戻す ← これを忘れると他の描画もおかしくなる
     SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
-}
-
-void Title::TitleCursorUpdate(void)
-{
-    InputManager& input = InputManager::GetInstance();
 }
 
 void Title::Finalize()
