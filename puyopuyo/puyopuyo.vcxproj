@@ -127,18 +127,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Src\Actor\GameObject.cpp" />
     <ClCompile Include="Src\Appmain.cpp" />
     <ClCompile Include="Src\Input\InputManager.cpp" />
+    <ClCompile Include="Src\Scene\End\End.cpp" />
+    <ClCompile Include="Src\Scene\InGame\InGame.cpp" />
+    <ClCompile Include="Src\Scene\SceneManager.cpp" />
+    <ClCompile Include="Src\Scene\Title\Title.cpp" />
     <ClCompile Include="Src\System\System.cpp" />
+    <ClCompile Include="Src\Utility\Fade.cpp" />
     <ClCompile Include="Src\Utility\FPS.cpp" />
     <ClCompile Include="Src\Utility\Vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Actor\GameObject.h" />
+    <ClInclude Include="Src\Actor\ObjectManager.h" />
     <ClInclude Include="Src\Input\InputManager.h" />
     <ClInclude Include="Src\Input\Template.h" />
+    <ClInclude Include="Src\Scene\End\End.h" />
+    <ClInclude Include="Src\Scene\InGame\InGame.h" />
+    <ClInclude Include="Src\Scene\SceneBase.h" />
+    <ClInclude Include="Src\Scene\SceneManager.h" />
+    <ClInclude Include="Src\Scene\SceneType.h" />
+    <ClInclude Include="Src\Scene\Title\Title.h" />
     <ClInclude Include="Src\System\ProjectConfig.h" />
     <ClInclude Include="Src\System\System.h" />
+    <ClInclude Include="Src\Utility\Fade.h" />
     <ClInclude Include="Src\Utility\FPS.h" />
+    <ClInclude Include="Src\Utility\Singleton.h" />
     <ClInclude Include="Src\Utility\Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
