@@ -31,3 +31,6 @@ packages/
 
 *.bak
 *.swp
+
+# Visual Studioの自動生成ファイル（不要）
+.vs/
