@@ -1,0 +1,11 @@
+#pragma once
+// シーンの初期化処理
+void SceneManagerInitialize(void);
+// シーンの更新処理
+void SceneManagerUpdate(void);
+// ゲームを終了するかのどうかを返すフラグ
+int IsFinish(void);
+// シーンマネージャーがすでに初期化かどうかを返すフラグ
+bool IsSceneManagerInitialized();
+//　シーン遷移時の入力制限
+bool IsSceneInputLocked();
