@@ -49,3 +49,5 @@ Release/
 *.exe
 *.db
 *.vsidx
+*.tlog    
+*.json    
