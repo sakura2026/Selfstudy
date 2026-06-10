@@ -1,5 +1,6 @@
 #include "DxLib.h"
 #include "Input/InputManager.h"
+#include "Scene/SceneManager.h"
 #include "System/System.h"
 #include "Utility/FPS.h"
 
@@ -25,15 +26,15 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 	int start_time, delta_time;
 	int currentFPS = 0;
 
-	//while (!IsSceneManagerInitialized())
-	//{
-	//	ClearDrawScreen();
-	//	// Lodingの描画を入れるならここに書く
+	while (!IsSceneManagerInitialized())
+	{
+		ClearDrawScreen();
+		// Lodingの描画を入れるならここに書く
 
-	//	// ここで1つずつ初期化を進める（リソース系含む）
-	//	SceneManagerInitialize();
-	//	ScreenFlip();
-	//}
+		// ここで1つずつ初期化を進める（リソース系含む）
+		SceneManagerInitialize();
+		ScreenFlip();
+	}
 
 	int fpstimer = GetNowCount();
 	int frameCount = 0;
@@ -51,8 +52,8 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int)
 		// 入力の更新
 		InputManager::GetInstance().Update();
 
-		// 画面の初期化
-		// SceneManagerUpdate();
+		 // 画面の初期化
+		 SceneManagerUpdate();
 
 		// FPS
 		UpdateFPS(frameCount, fpstimer, currentFPS);

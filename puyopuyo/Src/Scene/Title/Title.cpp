@@ -39,7 +39,7 @@ void Title::Init()
     // 大きい文字用
     BigFont = CreateFontToHandle("Cyberphont 2.0", 125, -1, DX_FONTTYPE_NORMAL);
     //　小さな文字用
-    SmallFont = CreateFontToHandle("Cyberphont 2.0", 60, -1, DX_FONTTYPE_EDGE, -1, 4);
+    SmallFont = CreateFontToHandle("Cyberphont 2.0", 20, -1, DX_FONTTYPE_EDGE, -1, 4);
     //==============================ここまでフォント登録の処理=========================//
 
     // アルファ値の初期化
@@ -96,7 +96,7 @@ void Title::Draw() const
     // アルファブレンドモードにして透明度をAlphaの値にする
     SetDrawBlendMode(DX_BLENDMODE_ALPHA, Alpha);
     // 小さな文字の位置と色
-    DrawStringToHandle(20, 10, "press   a  ", GetColor(125, 255, 70), SmallFont, GetColor(0, 0, 0));
+    DrawStringToHandle(50, 100, "PUYO PUYO MODOKI", GetColor(125, 255, 70), SmallFont, GetColor(0, 0, 0));
     // ブレンドモードを元（通常描画）に戻す ← これを忘れると他の描画もおかしくなる
     SetDrawBlendMode(DX_BLENDMODE_NOBLEND, 0);
 }
