@@ -33,4 +33,15 @@ private:
 	// デバッグ用変数：マス1つのサイズを計算する
 	static const int CELL_W = (BOX_RIGHT_X - BOX_LEFT_X) / COL;  // 横幅
 	static const int CELL_H = (BOX_RIGHT_Y - BOX_LEFT_Y) / ROW;  // 縦幅
+
+private:
+
+	// ぷよの行位置(0が一番上、ROW-1が一番下)
+	int m_puyo_Row;
+
+	// 最後に落ちた時間を記録する
+	int m_lastTime;
+
+	// 一番下についたかどうか
+	bool m_isBottom;
 };
